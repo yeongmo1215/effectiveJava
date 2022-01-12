@@ -90,10 +90,8 @@ Method param before value: hello, Methid param before address :99162322<br>
 Method param after value: hello world, Methid param after address :1794106052<br>
 Main s after 1 value: hello, Main s after 1 address :99162322<br>
 Main s after 2 value: hello world, Main s after 2 address :1794106052<br>
+
 ### 플라이웨이트 패턴(Flyweight pattern)
-
-### 인스턴스 통제
-
-### 싱글톤
-
-### 인스턴스화 불가
+어떤 클래스의 인스턴스를 최초 사용시에 생성 하고, 이후부터는 최초 생성한 인스턴스를 공유하여 객체들을 효과적으로 지원하는 방법
+주로 많은 수의 객체를 생성해야 할 때 사용
+ex) 래퍼 클래스(Wrapper Class)의  valueOf() 메소드

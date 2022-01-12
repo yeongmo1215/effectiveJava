@@ -25,7 +25,6 @@ public class Item1Application {
         System.out.println("Main s after 1 value: " + s + ", Main s after 1 address :" + s.hashCode());
         s += " world";
         System.out.println("Main s after 2 value: " + s + ", Main s after 2 address :" + s.hashCode());
-
     }
 
 //    public static void changeInteger(Integer param) {
