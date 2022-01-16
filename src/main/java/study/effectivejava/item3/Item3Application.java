@@ -6,6 +6,6 @@ import study.effectivejava.item2.Pizza;
 
 public class Item3Application {
     public static void main(String[] args) {
-
+        Elvis.INSTANCE.print();
     }
 }

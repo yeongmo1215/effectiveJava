@@ -13,3 +13,34 @@
 필요한 인터페이스에 대한 구현 객체로 마치 실제로 동작하는 것처럼 보이게 만들어 놓은 객체
 객체의 특정상태를 가정해서 만들어 특정값을 리턴해 주거나 특정 메세지를 출력 해주는 작업을 함 >> Hard coding 되기 때문에 로직에 따른 값 변경은 테스트 불가
 즉, 어떤 행위가 호출되면 특정 값을 리턴시켜주는 형태
+
+
+###무상태 객체(stateless obejct)
+인스턴스 필드가 없는 클래스의 인스턴스
+```java
+//무상태 객체
+class Stateless1{
+    void test(){
+        System.out.println("TEST!!");
+    }
+}
+
+//무상태 객체
+class Stateless2{
+    final String TEST = "TEST!!";
+    void test(){
+        System.out.println(TEST);
+    }
+}
+
+//상태 객체
+class Immutable {
+    final String testString;
+    Immutable(String testString){
+        this.testString = testString;
+    }
+    void test(){
+        System.out.println(testString);
+    }
+}
+```
